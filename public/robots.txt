@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://alvarizqi.my.id/sitemap.xml
+Host: https://alvarizqi.my.id
