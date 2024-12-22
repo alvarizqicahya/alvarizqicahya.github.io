@@ -54,7 +54,7 @@ export default function Home() {
     <>
       <div
         className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-        <main className="flex flex-col gap-8 row-start-2 items-center lg:max-w-2xl">
+        <main className="flex flex-col gap-8 row-start-2 items-center lg:max-w-3xl">
           <Image
             className="rounded-full transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl"
             src={profileImage}
@@ -65,18 +65,10 @@ export default function Home() {
             placeholder="blur"
             priority
           />
-          <h1 className="text-3xl font-extrabold font-sans">{globalMetadata.name}</h1>
+          <h1 className="text-3xl font-extrabold font-sans text-center">{globalMetadata.name}</h1>
 
           <p className="list-inside list-decimal text-sm text-center font-[family-name:var(--font-geist-mono)]">
-            I am a
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              Software Developer
-            </code>
-            specializing in web application development, with expertise in
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">PHP</code>,
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">Python</code>,
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">JavaScript</code>,
-            and more, and can use several frameworks.</p>
+            I am a <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">Software Developer</code> specializing in web application development, with expertise in <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">PHP</code>, <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">Python</code>, <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">JavaScript</code>, and more, and can use several frameworks.</p>
 
           <div className="flex gap-4 items-center flex-row">
             {socialMediaLinks.map((link, index) => (
