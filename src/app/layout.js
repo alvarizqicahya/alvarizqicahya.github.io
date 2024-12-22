@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import {globalMetadata} from "@/app/metadata";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,8 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Alvarizqi Cahya Saputra | Software Developer",
-  description: "I am a Software Developer specializing in web application development, with expertise in PHP, Python, JavaScript, and more, and can use several frameworks.",
+  ...globalMetadata,
 };
 
 export default function RootLayout({ children }) {
